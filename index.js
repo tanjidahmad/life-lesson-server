@@ -324,7 +324,7 @@ app.patch('/api/lessons/:id', async (req, res) => {
   }
 });
 
-// DELETE LESSON
+
 app.delete('/api/lessons/:id', async (req, res) => {
   try {
 
