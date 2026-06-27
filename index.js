@@ -84,7 +84,7 @@ const adminVerify=async(req,res,next)=>{
 
 async function run() {
   try {
-    // await client.connect();
+    
 
     const database = client.db("life_lessons_db");
 
