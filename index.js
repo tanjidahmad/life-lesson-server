@@ -1178,7 +1178,7 @@ app.delete(
     }
   }
 );
-// GET REPORTS BY LESSON
+
 app.get(
   "/api/reports/:lessonId",
   async (req, res) => {
