@@ -117,8 +117,7 @@ app.get('/api/lessons', async (req, res) => {
 
     const query = {};
 
-    // normal lessons page => only public
-    // admin manage lessons => all lessons
+    
     if (admin !== "true") {
       query.visibility = "public";
     }
@@ -150,7 +149,7 @@ app.get('/api/lessons', async (req, res) => {
 
     const page = parseInt(req.query.page) || 1;
 
-    // admin page teo pagination thakbe
+    
     const limit =
       admin === "true"
         ? parseInt(req.query.limit) || 10
