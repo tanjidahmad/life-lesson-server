@@ -201,10 +201,7 @@ app.get('/api/lessons', async (req, res) => {
 });
 
 
-    // =========================
-    // LESSONS API END
-    // =========================
-    // GET SINGLE LESSON
+    
 app.get("/api/lessons/:id", async (req, res) => {
   try {
     const id = req.params.id;
