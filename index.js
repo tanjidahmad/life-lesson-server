@@ -20,36 +20,7 @@ app.use(cors());
 app.use(express.json());
 
 
-// =========================
-// JWT / TOKEN VERIFY
-// =========================
-// const verifyToken = (
-//   req,
-//   res,
-//   next
-// ) => {
-//   const authHeader =
-//     req.headers.authorization;
 
-//   if (!authHeader) {
-//     return res.status(401).send({
-//       success: false,
-//       message: "Unauthorized Access",
-//     });
-//   }
-
-//   const token =
-//     authHeader.split(" ")[1];
-
-//   if (!token) {
-//     return res.status(401).send({
-//       success: false,
-//       message: "Unauthorized Access",
-//     });
-//   }
-
-//   next();
-// };
 
 app.get("/", (req, res) => {
   res.send("Life Lessons Server Running");
