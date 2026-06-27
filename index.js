@@ -347,7 +347,7 @@ app.delete('/api/lessons/:id', async (req, res) => {
   }
 });
 
-// SAVE FAVORITE
+
 app.post('/api/favorites',verifyToken, async (req, res) => {
   try {
 
