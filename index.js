@@ -912,7 +912,7 @@ app.get("/api/admin/stats", verifyToken,
         ])
         .toArray();
 
-    // ===== USER GROWTH =====
+
     const userGrowthRaw =
       await usersCollection
         .aggregate([
