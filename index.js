@@ -250,7 +250,7 @@ app.get("/api/lessons/:id", async (req, res) => {
     });
   }
 });
-// CREATE LESSON
+
 app.post('/api/lessons',verifyToken, async (req, res) => {
   try {
 
@@ -288,7 +288,7 @@ app.post('/api/lessons',verifyToken, async (req, res) => {
   }
 });
 
-// UPDATE LESSON
+
 app.patch('/api/lessons/:id', async (req, res) => {
   try {
 
